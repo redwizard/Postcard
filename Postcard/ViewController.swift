@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 		messageLabel.textColor = UIColor.blueColor()
 		
 		enterMessageTextField.text = ""
-		enterMessageTextField.resignFirstResponder()
+		enterMessageTextField.resignFirstResponder() // gets rid of keyboard
 		
 		sendMailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
 	}
