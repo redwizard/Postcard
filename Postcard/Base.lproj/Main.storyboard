@@ -102,6 +102,15 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGn-tl-BSB"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXo-nJ-Sqo">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="200" width="220" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -111,6 +120,7 @@
                                 <exclude reference="QfB-JF-Jkq"/>
                                 <exclude reference="qWM-Dk-fUE"/>
                                 <exclude reference="2Nr-17-kfu"/>
+                                <exclude reference="rXo-nJ-Sqo"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -120,6 +130,7 @@
                                 <include reference="QfB-JF-Jkq"/>
                                 <include reference="qWM-Dk-fUE"/>
                                 <include reference="2Nr-17-kfu"/>
+                                <include reference="rXo-nJ-Sqo"/>
                             </mask>
                         </variation>
                     </view>
@@ -127,6 +138,7 @@
                         <outlet property="enterMessageTextField" destination="qWM-Dk-fUE" id="TqS-8Q-fAe"/>
                         <outlet property="enterNameTextField" destination="QfB-JF-Jkq" id="J3m-BV-bsE"/>
                         <outlet property="messageLabel" destination="6Ng-Mc-fsq" id="dvz-w3-f5Z"/>
+                        <outlet property="nameLabel" destination="rXo-nJ-Sqo" id="lae-eZ-7Vk"/>
                         <outlet property="sendMailButton" destination="2Nr-17-kfu" id="J8F-4o-5Qh"/>
                     </connections>
                 </viewController>

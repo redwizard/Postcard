@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 	@IBOutlet weak var enterNameTextField: UITextField!
 	@IBOutlet weak var enterMessageTextField: UITextField!
 	@IBOutlet weak var sendMailButton: UIButton!
+	@IBOutlet weak var nameLabel: UILabel!
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -31,6 +32,13 @@ class ViewController: UIViewController {
 		
 		enterMessageTextField.text = ""
 		enterMessageTextField.resignFirstResponder() // gets rid of keyboard
+		
+		nameLabel.hidden = false
+		nameLabel.text = enterNameTextField.text
+		nameLabel.textColor = UIColor.greenColor()
+		
+		enterNameTextField.text = ""
+		enterNameTextField.resignFirstResponder()
 		
 		sendMailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
 	}
